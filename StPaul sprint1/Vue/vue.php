@@ -48,9 +48,11 @@
 		<right class="right">
 			<h2>Liste des séjours prévus </h2>
 			<fieldset>
+			<sejour>
 			<?php
-			include "../Mod�le/modele.php";
+			include "Vue/affiche_sejours.php";
 			?>
+			</sejour>
 			</fieldset>
 		</right>
 </main>

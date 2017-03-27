@@ -16,11 +16,11 @@ include "connect.php";
 		include "Classe/sejourDAO.php";
 
 // injections des requêtes sql dans la base de données.
-	//include "Modèle/modele.php";
+	include "Modèle/modele.php";
 	
 	$osejourDAO = new sejourDAO($bdd);
 	$SejNo = 1;
-	$osejour = $osejourDAO->get($SejNo);
+	$osejour = $osejourDAO->getList($SejNo);
 	
 // Affichage du site web.
 	require "Vue/vue.php";

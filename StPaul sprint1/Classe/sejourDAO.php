@@ -21,10 +21,10 @@ Class sejourDAO {
 	public function getList()
 	{
 		$lstsejour = [];
-		$results = $this->_bdd->query("SELECT * FROM sejour ORDER BY SejDteDeb DESC");
-		while ($news = $results->fetch(PDO::FETCH_ASSOC))
+		$results = $this->_bdd->query("SELECT SejDteDeb, SejDuree, SejIntitule, SejMontantMBI, SejNo FROM sejour ORDER BY SejNo DESC");
+		while ($sejour = $results->fetch(PDO::FETCH_ASSOC))
 		{
-			$lstsejour[] = new sejour($objet['SejDteDeb'],$objet['SejDuree'],$objet['SejIntitule'],$objet['SejMontantMBI'],$objet['SejNo']);
+			$lstsejour[] = new sejour($sejour['SejDteDeb'],$sejour['SejDuree'],$sejour['SejIntitule'],$sejour['SejMontantMBI'],$sejour['SejNo']);
 		}
 		return $lstsejour;
 	}
