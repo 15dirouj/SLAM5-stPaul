@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link href="css/styly.css" rel="stylesheet" />
+	<link href="Vue/css/styly.css" rel="stylesheet" />
 	<title>SAINT PAUL DU TERRAY</title>
 </head>
 
@@ -49,7 +49,7 @@
 			<h2>Liste des s√©jours pr√©vus </h2>
 			<fieldset>
 			<?php
-			include "ModËle/modele.php";
+			include "../ModËle/modele.php";
 			?>
 			</fieldset>
 		</right>
