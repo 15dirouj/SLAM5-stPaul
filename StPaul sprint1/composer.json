@@ -1,0 +1,15 @@
+{
+  "name": "StPaul sprint1",
+  "description": "Reorganisation de l'application web",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Estran",
+      "email": "Estran@gmail.com"
+    }
+  ],
+  "require": {
+    "silex/silex": "1.3.x-dev"
+  }
+}
